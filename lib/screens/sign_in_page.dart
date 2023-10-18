@@ -138,7 +138,7 @@ class _SignInPageState extends State<SignInPage> {
                       //       fontSize: _width * 0.1, fontWeight: FontWeight.bold),
                       // ),
                       Image.asset(
-                        'images/bpp shop logo 01.896abfc13589245ecc62.png',
+                        'images/bppshoplogo.png',
                         height: _height * (30 / 600),
                         // width: 140,
                       ),
@@ -182,95 +182,7 @@ class _SignInPageState extends State<SignInPage> {
                                   key: _formKey,
                                   child: Column(
                                     children: [
-                                      // TextFormField(
-                                      //   //maxLength: (_width*0.9).toInt(),
-                                      //   autovalidateMode:
-                                      //       AutovalidateMode.onUserInteraction,
-                                      //   controller: phoneController,
-                                      //
-                                      //   decoration: InputDecoration(
-                                      //       contentPadding: EdgeInsets.symmetric(
-                                      //           horizontal: _width * 0.02,
-                                      //           vertical: _height * 0.01),
-                                      //       filled: true,
-                                      //       fillColor: Color(0xffe0e0e0),
-                                      //       hintText: " Enter Mobile Number ",
-                                      //       enabledBorder: OutlineInputBorder(
-                                      //           borderRadius:
-                                      //               BorderRadius.circular(10),
-                                      //           borderSide: BorderSide(
-                                      //             color: Color(0xff059dd8),
-                                      //           )),
-                                      //       focusedBorder: OutlineInputBorder(
-                                      //           borderRadius:
-                                      //               BorderRadius.circular(10),
-                                      //           borderSide: BorderSide(
-                                      //             color: Colors.blue,
-                                      //           )),
-                                      //       errorBorder: OutlineInputBorder(
-                                      //         borderRadius: BorderRadius.circular(10),
-                                      //         borderSide: BorderSide(
-                                      //           color: Colors.red,
-                                      //         ),
-                                      //       ),
-                                      //       focusedErrorBorder: OutlineInputBorder(
-                                      //           borderRadius:
-                                      //               BorderRadius.circular(10),
-                                      //           borderSide: BorderSide(
-                                      //             color: Colors.red,
-                                      //           )),
-                                      //     errorStyle: TextStyle(
-                                      //       color: Colors.red,
-                                      //       fontSize: _width * 0.035,
-                                      //       fontWeight: FontWeight
-                                      //           .w400, // Customize the error text color
-                                      //     ),
-                                      //   ),
-                                      //
-                                      //   keyboardType: TextInputType.number,
-                                      //   textInputAction: TextInputAction.next,
-                                      //   validator: (value){
-                                      //     final phonePattern = RegExp(r'^(01\d{9}|(?:\+880|880)\d{10})$');
-                                      //     if (value!.isEmpty) {
-                                      //       // setState(() {
-                                      //       //   phoneError = 'Please enter your phone number';
-                                      //       // });
-                                      //       return "Please enter your phone number";
-                                      //     }
-                                      //     else if (phonePattern.hasMatch(value)) {
-                                      //       // setState(() {
-                                      //       //   phoneError = 'Please enter a valid phone number';
-                                      //       // });
-                                      //       return "Please enter a valid phone number";
-                                      //
-                                      //     }
-                                      //     return null;
-                                      //   },
-                                      //   onEditingComplete: () {
-                                      //     if (_formKey.currentState!.validate()) {
-                                      //       //print("Successfull");
-                                      //     } else {}
-                                      //    },
-                                      //   onChanged: (value) {
-                                      //       setState(() {
-                                      //         phone = value;
-                                      //         phoneError = '';
-                                      //       });
-                                      //      //_validatePhoneFields(phone);
-                                      //   },
-                                      //   // validator: validateA,
 
-                                      // ),
-                                      // Padding(
-                                      //   padding: EdgeInsets.symmetric(
-                                      //     horizontal: _width * (9 / 360),
-                                      //     vertical: _height * (3 / 600),
-                                      //   ),
-                                      //   child: Align(
-                                      //       alignment: Alignment.centerLeft,
-                                      //       child: Text(phoneError,
-                                      //           style: TextStyle(color: Colors.red))),
-                                      // ),
                                       SizedBox(
                                         height:
                                         MediaQuery.of(context).size.height / 80,
