@@ -14,8 +14,8 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
-  _focusChange(
-      BuildContext context, FocusNode currentFocus, FocusNode nextFocus) {
+  _focusChange(BuildContext context, FocusNode currentFocus,
+      FocusNode nextFocus) {
     currentFocus.unfocus();
     FocusScope.of(context).requestFocus(nextFocus);
   }
@@ -100,8 +100,14 @@ class _SignInPageState extends State<SignInPage> {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery
+        .of(context)
+        .size
+        .width;
+    final _height = MediaQuery
+        .of(context)
+        .size
+        .height;
 
     return SafeArea(
       child: Scaffold(
@@ -122,8 +128,14 @@ class _SignInPageState extends State<SignInPage> {
               ClampingScrollPhysics(parent: NeverScrollableScrollPhysics()),
               child: ConstrainedBox(
                 constraints: BoxConstraints(
-                  minWidth: MediaQuery.of(context).size.width,
-                  minHeight: MediaQuery.of(context).size.height,
+                  minWidth: MediaQuery
+                      .of(context)
+                      .size
+                      .width,
+                  minHeight: MediaQuery
+                      .of(context)
+                      .size
+                      .height,
                 ),
                 child: IntrinsicHeight(
                   child: Column(
@@ -152,7 +164,8 @@ class _SignInPageState extends State<SignInPage> {
                         //margin: EdgeInsets.symmetric(vertical: _hight*0.05, horizontal: _width*0.05),
                         child: Padding(
                           padding: EdgeInsets.symmetric(
-                              horizontal: _width * 0.03, vertical: _height * 0.03),
+                              horizontal: _width * 0.03,
+                              vertical: _height * 0.03),
                           child: Column(
                             children: [
                               Text('Sign In ',
@@ -161,7 +174,10 @@ class _SignInPageState extends State<SignInPage> {
                                       fontWeight: FontWeight.bold,
                                       color: Color(0xff334257))),
                               SizedBox(
-                                height: MediaQuery.of(context).size.height / 120,
+                                height: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .height / 120,
                               ),
                               Text(
                                 'Wellcome to seller login',
@@ -185,7 +201,10 @@ class _SignInPageState extends State<SignInPage> {
 
                                       SizedBox(
                                         height:
-                                        MediaQuery.of(context).size.height / 80,
+                                        MediaQuery
+                                            .of(context)
+                                            .size
+                                            .height / 80,
                                       ),
                                       Align(
                                         alignment: Alignment.topLeft,
@@ -317,10 +336,14 @@ class _SignInPageState extends State<SignInPage> {
                                     ],
                                   )),
                               SizedBox(
-                                height: MediaQuery.of(context).size.height / 120,
+                                height: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .height / 120,
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment
+                                    .spaceBetween,
                                 children: [
                                   Row(
                                     children: [
@@ -352,7 +375,10 @@ class _SignInPageState extends State<SignInPage> {
                                 ],
                               ),
                               SizedBox(
-                                height: MediaQuery.of(context).size.height / 20,
+                                height: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .height / 20,
                               ),
 
                               MaterialButton(
@@ -367,7 +393,8 @@ class _SignInPageState extends State<SignInPage> {
                                     //   Navigator.of(context).push(MaterialPageRoute(
                                     //       builder: (context) => DemoSeller()));
                                     // }
-                                    if (phoneError.isEmpty && passwordError.isEmpty) {
+                                    if (phoneError.isEmpty &&
+                                        passwordError.isEmpty) {
                                       // Navigator.of(context).push(MaterialPageRoute(
                                       //     builder: (context) => SignUpPage()));
                                     } else {}
@@ -381,7 +408,10 @@ class _SignInPageState extends State<SignInPage> {
                                   height: _height * 0.05),
 
                               SizedBox(
-                                height: MediaQuery.of(context).size.height / 80,
+                                height: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .height / 80,
                               ),
                               // RichText(
                               //   text: const TextSpan(
@@ -409,7 +439,10 @@ class _SignInPageState extends State<SignInPage> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width / 120,
+                                    width: MediaQuery
+                                        .of(context)
+                                        .size
+                                        .width / 120,
                                   ),
                                   InkWell(
                                       onTap: () {
@@ -422,7 +455,8 @@ class _SignInPageState extends State<SignInPage> {
                                             fontSize: _width * 0.055,
                                             fontWeight: FontWeight.bold,
                                             color: Colors.blue,
-                                            decoration: TextDecoration.underline),
+                                            decoration: TextDecoration
+                                                .underline),
                                       ))
                                 ],
                               )
